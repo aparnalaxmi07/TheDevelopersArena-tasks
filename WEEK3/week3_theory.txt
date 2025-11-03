@@ -1,0 +1,86 @@
+WEEK 3 THEORY: FUNCTIONS & DICTIONARIES
+
+1️⃣ Functions
+A function is a reusable block of code that performs a specific task.
+
+Syntax:
+    def function_name(parameters):
+        # code
+        return value
+
+Example:
+    def greet(name):
+        return "Hello " + name
+
+    print(greet("Aparna"))
+
+
+2️⃣ Function Parameters and Return Values
+- Parameters: Variables passed to a function.
+- Return: Sends a result back to the caller.
+
+Example:
+    def add(a, b):
+        return a + b
+
+    result = add(5, 3)
+    print(result)  # 8
+
+
+3️⃣ Dictionaries
+Dictionaries store data in key-value pairs.
+
+Example:
+    student = {
+        "name": "Aparna",
+        "age": 20,
+        "course": "Cybersecurity"
+    }
+
+    print(student["name"])  # Access value by key
+    student["grade"] = "A"  # Add new key-value
+    del student["age"]      # Remove key
+
+
+4️⃣ Working with Strings
+Strings have many useful built-in methods.
+
+Example:
+    text = "Python is Fun"
+    print(text.upper())     # PYTHON IS FUN
+    print(text.lower())     # python is fun
+    print(text.split())     # ['Python', 'is', 'Fun']
+    print(len(text))        # 13
+
+
+5️⃣ Scope: Local vs Global Variables
+- **Local:** Inside a function, accessible only there.
+- **Global:** Declared outside, accessible anywhere.
+
+Example:
+    x = 10  # global
+
+    def show():
+        x = 5  # local
+        print(x)
+
+    show()       # 5
+    print(x)     # 10
+
+
+6️⃣ Built-in Functions & Modules
+Python includes many built-ins like:
+    len(), sum(), max(), min(), type(), print(), input()
+
+Modules are pre-written Python files you can import:
+    import math
+    print(math.sqrt(16))
+
+
+✅ Summary:
+- Functions help reuse code.
+- Dictionaries organize data with key-value pairs.
+- Strings have many useful methods.
+- Scope controls variable access.
+- Built-in functions simplify tasks.
+

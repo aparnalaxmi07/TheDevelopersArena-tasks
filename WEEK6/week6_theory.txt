@@ -1,0 +1,80 @@
+WEEK 6 THEORY: WORKING WITH EXTERNAL LIBRARIES
+----------------------------------------------
+
+1. Python Packages and pip
+Packages are collections of reusable code created by others.
+pip is the package installer for Python.
+
+Install a package:
+    pip install requests
+
+Check installed packages:
+    pip list
+
+Uninstall a package:
+    pip uninstall package_name
+
+----------------------------------------------
+
+2. Working with Dates and Times (datetime)
+The datetime module is used to work with dates and time.
+
+Example:
+    from datetime import datetime
+    now = datetime.now()
+    print(now.strftime("%Y-%m-%d %H:%M:%S"))
+
+----------------------------------------------
+
+3. Making HTTP Requests (requests library)
+The requests library allows you to communicate with web APIs.
+
+Example:
+    import requests
+    response = requests.get("https://api.github.com")
+    print(response.status_code)
+    print(response.json())
+
+----------------------------------------------
+
+4. Working with JSON Data
+Most APIs return data in JSON format.
+JSON can be converted to Python dictionaries using response.json()
+
+Example:
+    data = response.json()
+    print(data["login"])
+
+----------------------------------------------
+
+5. Virtual Environments
+Used to isolate project dependencies.
+
+Create a virtual environment:
+    python -m venv env
+
+Activate (Windows):
+    env\Scripts\activate
+
+Deactivate:
+    deactivate
+
+----------------------------------------------
+
+6. Reading API Documentation
+API docs tell you:
+- Base URL
+- Required parameters
+- Example responses
+- Authentication (API key)
+- Error codes
+
+----------------------------------------------
+
+SUMMARY:
+- pip installs external packages
+- datetime handles timestamps
+- requests fetches data from APIs
+- JSON is used to read API responses
+- virtual environments manage dependencies
+----------------------------------------------
